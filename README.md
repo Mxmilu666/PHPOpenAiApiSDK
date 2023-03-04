@@ -1,4 +1,4 @@
-# PHPOpenAiSDK
+# PHPOpenAiApiSDK
 简单的基于PHP的Openai对接开发SDK
 
 Docking Openai API based on PHP

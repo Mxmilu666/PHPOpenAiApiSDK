@@ -4,11 +4,16 @@ Docking Openai API based on PHP
 
 ## ⚙️ 格式
 本SDK定义了两个函数,分别为:
+
 openai($APIkey,$model,$prompt,$max_tokens);
+
 openaichat($APIkey,$model,$role,$message,$max_tokens);
+
 具体参数请参考[OpenAi文档]([https://www.mdui.org/](https://platform.openai.com/docs/api-reference/introduction))
+
 ## 🛠️ 如何使用
 将openai.php拉下来后即可使用
+
 示例:
 ``` shell
 include "./openai.php";

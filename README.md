@@ -9,7 +9,7 @@ openai($APIkey,$model,$prompt,$max_tokens);
 
 openaichat($APIkey,$model,$role,$message,$max_tokens);
 
-具体参数请参考[OpenAi文档]([https://www.mdui.org/](https://platform.openai.com/docs/api-reference/introduction))
+具体参数请参考 [OpenAi文档](https://platform.openai.com/docs/api-reference/introduction)
 
 ## 🛠️ 如何使用
 将openai.php拉下来后即可使用

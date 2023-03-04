@@ -1,7 +1,7 @@
 <?php
 function openai($APIkey,$model,$prompt,$max_tokens) {
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL,'https://gpt.5k.work/v1/completions');
+curl_setopt($curl, CURLOPT_URL,'https://api.openai.com/v1/completions');
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curl, CURLOPT_POST, 1);
@@ -31,7 +31,7 @@ return $res;
 
 function openaichat($APIkey,$model,$role,$message,$max_tokens) {
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL,'https://gpt.5k.work/v1/chat/completions');
+curl_setopt($curl, CURLOPT_URL,'https://api.openai.com/v1/chat/completions');
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curl, CURLOPT_POST, 1);

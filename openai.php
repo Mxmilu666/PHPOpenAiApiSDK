@@ -1,5 +1,5 @@
 <?php
-function openai($APIkey,$model,$prompt,$max_tokens) {
+function openai($APIkey,$model,$prompt,$max_tokens,$temperature) {
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL,'https://api.openai.com/v1/completions');
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -9,7 +9,7 @@ curl_setopt($curl, CURLOPT_POSTFIELDS,json_encode(array(
         'model' => $model,
         'prompt' => $prompt,
         'max_tokens' => $max_tokens,
-        'temperature' => 1,
+        'temperature' => $temperature,
         'top_p' => 1,
         'n' => 1,
         'presence_penalty' => 0.6,

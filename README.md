@@ -3,6 +3,9 @@
 
 Docking Openai API based on PHP
 
+# Note that this SDK is outdated. Please find a new SDK to use
+# 请注意，此SDK已过时。请找到要使用的新SDK
+
 ## ⚙️ 格式
 本SDK定义了两个函数,分别为:
 
